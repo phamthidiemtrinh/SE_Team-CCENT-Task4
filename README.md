@@ -18,7 +18,17 @@
   - start--> all programs --> Accessories--> communicatións --> hyper terminal
   - mô tả tên tùy ý cho router
   - tiến hành thiết lập thông số cho router --->restore default --> ok
-  
-  
-    
+  - các lệnh cơ bản:
+    - user EXE mode : Router > enable [enter]: chuyển sang mode đặc biệt
+    - privilege mode : router # : thự hiện hiển thị bất kỳ mọi thông số của router và có quyền đi đến bbất kỳ mode nào khác
+    - router# configure terminal [enter] -> global configuratin router(config)#_ : cấu hình cho router 
+    - sub-mode router(config-if)#_ : mọi câu lệnh được đưa ra chỉ ảnh hưởng tới interface cu thể nào đó
+    - exit : từ mode trong ra ngòai
+    - disable: để di từ privilege mode về User EXEC mode, nếu sử dụng lệnh exit tại đây thì sẽ đăng xuất ra khỏi router
+    - router(config)#hostnam_ [tên][enter]: dổi tên router
+    - Enable password: router(config)#enable_[pas][enter] ;  đặt mật khẩu từ lớp user vào privilege
+    - router#show_running-cònfig[enter] : xem file cấu hinh
+    - console password:  router(config)#line_console_0[enter] -> router(config-line)#password_[pass]_[enter] -> router(config-line)#login[enter] : đặt password cho cổng console
+    - router(config)#service_password-encryption[enter] : mã hóa toàn bộ password
+    - router(config)#banner_motd_#khẩu hiệu# ;  đặt khẩu hiệu.
    
